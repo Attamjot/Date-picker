@@ -18,3 +18,12 @@
 
  **Tips:**
  * Value of **Date Picker** can be changed on updating the attribute as well over Elements Tab ( Developer Tools )
+ * Also in console you can change the value and the UI will be updated accordingly ( Model Oriented Approach ):
+ ```javascript
+  // In Chrome Developer tools (console tab):
+  const datePicker = document.querySelector("#accolite-date-picker")
+  // getter function will be called and you will get the current value of Date Picker value:
+  datePicker.value
+  // Setter function will be called, and the UI will be updated accodingly
+  datePicker.value = "2020-04-18";
+ ```
